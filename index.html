@@ -6,11 +6,19 @@
   </head>
 
   <body>
-    <div id="app"></div>
+    <div id="app">I am {{myName}} and my message is {{message}}</div>
+    
     Hello!</br> This is <b>Choon Kiat's</b> sandbox!
-    <!--
-      <script src="src/index.js">
-      </script>
-    -->
+  
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+	 var app = new Vue({
+      el: '#app',
+       data: { 
+         myName: 'Choon Kiat',
+         message: 'Hello Vue!' } 
+       })
+   </script>
+  
   </body>
 </html>
